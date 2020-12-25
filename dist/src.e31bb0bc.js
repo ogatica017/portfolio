@@ -29510,12 +29510,12 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
 var _default = Jokes;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"assets/project1.png":[function(require,module,exports) {
-module.exports = "/project1.0e13da1c.png";
-},{}],"assets/project2.png":[function(require,module,exports) {
-module.exports = "/project2.d48872d8.png";
-},{}],"assets/project3.png":[function(require,module,exports) {
-module.exports = "/project3.592b562e.png";
+},{"react":"../node_modules/react/index.js"}],"assets/version_control.png":[function(require,module,exports) {
+module.exports = "/version_control.5cb297d9.png";
+},{}],"assets/map.png":[function(require,module,exports) {
+module.exports = "/map.fe1c6ce7.png";
+},{}],"assets/pac_man.png":[function(require,module,exports) {
+module.exports = "/pac_man.4a2ac495.png";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -29524,11 +29524,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _project = _interopRequireDefault(require("../assets/project1.png"));
+var _version_control = _interopRequireDefault(require("../assets/version_control.png"));
 
-var _project2 = _interopRequireDefault(require("../assets/project2.png"));
+var _map = _interopRequireDefault(require("../assets/map.png"));
 
-var _project3 = _interopRequireDefault(require("../assets/project3.png"));
+var _pac_man = _interopRequireDefault(require("../assets/pac_man.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29537,23 +29537,23 @@ var PROJECTS = [{
   title: 'Gitlet: A Git Clone',
   description: 'A lighter version-control system with all the local capabilities of Git, allowing users to save accessible backups of previous versions of a file, locally preventing potential data loss while being privacy-friendly.',
   link: 'https://github.com/ogatica017/gitlet',
-  image: _project.default
+  image: _version_control.default
 }, {
   id: 2,
   title: 'Bearmaps',
   description: 'Manipulated real-world mapping data from Google Maps API to create the backend of a mapping application that generates an image of a specified region and finds the optimal route between two locations using A* search.',
   link: 'https://github.com/ogatica017/bearmaps',
-  image: _project2.default
+  image: _map.default
 }, {
   id: 3,
   title: 'Reinforcement Learning Pac-Man',
   description: 'Implemented Q-learning which enabled a Pac-Man agent to use reinforcement learning and search for an optimal policy to a Markov Decision Process through trial and error, learning to avoid ghosts while maximizing game score.',
   link: 'https://github.com/ogatica017/rl_pacman',
-  image: _project3.default
+  image: _pac_man.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/version_control.png":"assets/version_control.png","../assets/map.png":"assets/map.png","../assets/pac_man.png":"assets/pac_man.png"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29585,7 +29585,7 @@ var Project = function Project(props) {
     alt: "profile",
     style: {
       width: 200,
-      height: 120
+      height: 200
     }
   }), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("a", {
     href: link
@@ -30035,6 +30035,8 @@ var _Header = _interopRequireDefault(require("./components/Header"));
 
 require("./index.css");
 
+var _Projects = _interopRequireDefault(require("./components/Projects"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouterDom.Router, {
@@ -30061,7 +30063,7 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
 //   console.log(quote);
 //})
 //.catch(error => console.log('error', error));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./components/Jokes":"components/Jokes.js","./components/App":"components/App.js","./components/Header":"components/Header.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./components/Jokes":"components/Jokes.js","./components/App":"components/App.js","./components/Header":"components/Header.js","./index.css":"index.css","./components/Projects":"components/Projects.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30089,7 +30091,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50650" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51445" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

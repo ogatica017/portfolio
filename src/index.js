@@ -6,6 +6,7 @@ import Jokes from './components/Jokes';
 import App from './components/App';
 import Header from './components/Header';
 import './index.css';
+import Projects from './components/Projects';
 
 
 

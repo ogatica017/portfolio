@@ -6,7 +6,7 @@ const Project = props => {
     return (
         <div style={{display: 'inline-block', width: 300, margin: 50}}>
             <h3>{title}</h3>
-            <img src={image} alt='profile' style={{ width: 200, height: 120}} />
+            <img src={image} alt='profile' style={{ width: 200, height: 200}} />
             <p>{description}</p>
             <a href={link}>{link}</a>
         </div>
